@@ -53,6 +53,20 @@ public class Main {
 //            System.out.println("question 2 : please enter numbers only");
 //        }
 
+        //Question 3
+        System.out.println("\n..Question 3..");
+        try {
+
+            System.out.println("Enter the radius of a circle to print it's area and perimeter:");
+            double radius = input.nextDouble();
+
+            double perimeter = 2 * Math.PI * radius;
+            double area = Math.PI * radius * radius;
+
+            System.out.println("Radius = " + radius + "\n Perimeter = " + perimeter + "\n Area = " + area);
+        }catch (InputMismatchException e){
+            System.out.println("Wrong input, please enter numbers only");
+        }
 
 
 
@@ -106,14 +120,6 @@ public class Main {
 //        }
 
 
-
-//                //Question 6 -----------------------------------------
-//                System.out.println("\n..Question 6..");
-//                System.out.println("Input a word: ");
-//                String word = input.next();
-//                StringBuilder str = new StringBuilder(word);
-//                StringBuilder str_rev = str.reverse();
-//                System.out.println("Reverse word: " + str_rev);
 
 
 
@@ -229,5 +235,5 @@ public class Main {
         } else System.out.println("even");
     }
 
-   
+
 }
